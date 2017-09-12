@@ -26,58 +26,84 @@
             z-index: -1;
         }
 
-        .overlay{
+        .center {
+            text-align: center;
             position: absolute;
-
-
             
-
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            
+            
         }
+        
         h1{
             font-family: clearsans;
-            padding-top:180px;
-            margin-left: 170px;
             color:azure;
+            
+            
+            padding-top: 50%;
+            
         }
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 60px;
+        h2 {
+            
             font-family: clearsans;
-            padding-top:20px;
-            margin-left: 9.5%;
-            font-size: 1.5em;
-        } 
-
-        li a {
-            display: block;
+            padding-top:10px;
+            color:azure;
+            
+            
         }
-        a {
-            color: azure;
-            text-decoration: none;
+        #about{
+           
+            font-family: clearsans;
+            padding-top:10px;
+            color:azure;
+            padding-right:400px;
+            padding-left:400px;
+        }
+        #contact{
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            border-top-style: solid;
+            border-top: thick single #007FFF;
+            width: 200px;
+            color:azure;
+            padding-right:300px;
+            padding-left:300px;
+            font-family: clearsans;
+            margin-top:48.5%;
+        }
         
         </style>
     </head>
     <body>
         
         <div class="container">
+            <div align="center">
             <video poster="img/poster.png" preload="auto" autoplay="true" muted="muted" loop>
                 <source src="poster.mp4" type="video/mp4">
                 <source src="poster.webm" type="video/webm">
             </video>
         </div>
         
-        <div class="overlay">
+        <div class="center">
             <h1>SAM RICHARDSON</h1>
-        
-    
-            <ul>
-                <li><a href="http://samricha.com/about">About</a></li>
-                <li><a href="http://samricha.com/art">Art</a></li>
-                <li><a href="https://github.com/toolbax">Github</a></li>
-            </ul>
+            <center>
+               <h2>About</h2>
+                <p id="about">I'm a programming student at North Seattle College and this is my personal website that serves as my professional hub and provides visitors with some of my projects, websites, contact information, and social media profiles</p>
+                
+            </center>
         </div>
+            <center>
+        <p id="contact">contact for business inquiries - toolbax@gmail.com</p>
+                </center>
         
         
     </body>
