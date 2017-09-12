@@ -1,14 +1,84 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>SAM RICHARDSON</title>
+    <style>
+        @font-face{
+            font-family: clearsans;
+            src: url(TTF/ClearSans-Light.ttf) format("truetype");
+        }
+        body, html{
+            margin: 0;
+            padding: 0;
+            height:100%; 
+            overflow:hidden;
+        }
+        .container video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        .overlay{
+            position: absolute;
+
+
+            
+
+        }
+        h1{
+            font-family: clearsans;
+            padding-top:180px;
+            margin-left: 170px;
+            color:azure;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 60px;
+            font-family: clearsans;
+            padding-top:20px;
+            margin-left: 9.5%;
+            font-size: 1.5em;
+        } 
+
+        li a {
+            display: block;
+        }
+        a {
+            color: azure;
+            text-decoration: none;
+        
+        </style>
     </head>
     <body>
-        <video poster="img/poster.png" autoplay="true" loop>
-            <source src="video/poster.mp4" type="video/mp4">
-            <source src="video/poster.webm" type="video/webm">
-        </video>    
+        
+        <div class="container">
+            <video poster="img/poster.png" preload="auto" autoplay="true" muted="muted" loop>
+                <source src="poster.mp4" type="video/mp4">
+                <source src="poster.webm" type="video/webm">
+            </video>
+        </div>
+        
+        <div class="overlay">
+            <h1>SAM RICHARDSON</h1>
+        
+    
+            <ul>
+                <li><a href="http://samricha.com/about">About</a></li>
+                <li><a href="http://samricha.com/art">Art</a></li>
+                <li><a href="https://github.com/toolbax">Github</a></li>
+            </ul>
+        </div>
+        
+        
     </body>
 </html>
