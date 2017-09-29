@@ -1,0 +1,63 @@
+        @font-face{
+            font-family: clearsans;
+            src: url(TTF/ClearSans-Light.ttf) format("truetype");
+        }
+        body, html{
+            margin: 0;
+            padding: 0;
+            height:100%; 
+            overflow:hidden;
+            width:100%;
+        }
+        .container video{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+        .center {
+            
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            width: auto;
+            height: 300px;
+            margin-top: 12%;
+        }
+        
+        h1{
+            font-family: clearsans;
+            text-align: center;
+            border-bottom-style:double;
+            border-bottom-color: black;
+            width: 1000px;
+            margin: 0 auto;
+            padding-bottom: 15px;
+        }
+        #about{
+            font-family: clearsans;
+            padding-top:10px;
+            margin-left: 27%;
+            margin-right: 38%;
+        }
+        #contact{
+            margin-left: 27%;
+            margin-right: 50%;
+            font-family: clearsans;
+            padding-top:5px;
+        }
+        .ima{
+            float: left;
+            padding-top:10px;
+            margin-left: 27%;
+            margin-right: 50%;
+        }
+        img{
+            padding-right:5px;
+        }
