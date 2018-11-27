@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     background:  url("https://i.pinimg.com/564x/b8/cb/b5/b8cbb5453d71d6a14292518b692ac2d6.jpg") no-repeat center fixed; 
-    background-size: cover;
+    background-size: initial;
 }
 
 *, *:before, *:after {
