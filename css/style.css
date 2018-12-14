@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     background:  url("https://i.pinimg.com/564x/b8/cb/b5/b8cbb5453d71d6a14292518b692ac2d6.jpg") no-repeat center fixed; 
-    background-size: initial;
+    background-size: cover;
 }
 
 *, *:before, *:after {
@@ -13,22 +13,6 @@ body{
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
-.row::before,
-.row::after {
-    display: table;
-    content: " ";
-    clear: both;
-}
-
-.one,
-.one-third,
-.two-thirds,
-.one-fourth,
-.half {
     width: 100%;
     top: 35%;
     position:fixed
@@ -39,7 +23,6 @@ body{
     border-radius: 2px;
     background-color: #fcd1d0;
     max-width: 250px;
-    height: 80px;
     margin: 0 auto;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
     font-size: 80%;
@@ -79,6 +62,8 @@ body{
     }
 
 h1{
+    position: relative;
+    bottom: 2px;
     text-align: center;
     font-family: 'Didact Gothic', sans-serif;
     color: #f787b2;
@@ -152,30 +137,6 @@ h1{
     background-size: cover;
     }
     
-    .one {
-        width: 100%;
-    }
-    
-    .half {
-        width: calc(100% / 2);
-    }
-    
-    .one-third {
-        width: calc(100% / 3);
-    }
-    
-    .one-fourth {
-        width: calc(100% / 4);
-    }
-    
-    .two-thirds {
-        width: calc(100% / 3 * 2);
-    }
-    
-    .column {
-        float: left;
-    }
-    
     #holder {
         border: .5rem outset  #FDFAF8;
         border-radius: 2px;
@@ -183,7 +144,6 @@ h1{
         max-width: 300px;
         box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
         font-size: 95%;
-        padding: 0 0 78px 0;
     }
 
     .icon-holder{
@@ -222,7 +182,6 @@ h1{
         text-align: center;
         font-family: 'Didact Gothic', sans-serif;
         color: #f787b2;
-        
         -webkit-animation: color-change 10s infinite;
         -moz-animation: color-change 10s infinite;
     }
