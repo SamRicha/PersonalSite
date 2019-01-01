@@ -1,230 +1,233 @@
-html {
-    box-sizing: border-box;
-    background:  url("https://i.pinimg.com/564x/b8/cb/b5/b8cbb5453d71d6a14292518b692ac2d6.jpg") no-repeat center fixed; 
-    background-size: cover;
-}
+progress, sub, sup {
+  vertical-align: baseline; }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+@font-face {
+    font-family: "Porto";
+    src: url("../font/Porto.ttf"); }
 
-body{
-    height: 100%;
-}
-
-.container {
+html, body {
+    min-width: 260px; 
     width: 100%;
-    top: 35%;
-    position:fixed
-}
-
-#holder {
-    border: 0.5rem outset  #fde7e7;
-    border-radius: 2px;
-    background-color: #fcd1d0;
-    max-width: 250px;
-    margin: 0 auto;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
-    font-size: 80%;
-}
-
-.icon-holder{
-    float: left;
-    border: 0.5rem outset  #fde7e7;
-    border-radius: 2px;
-    background-color: #fcd1d0;
-    width: 75px;
-    height: 75px;
-    margin: auto 5px;
-    box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
-    font-size: 80%;
-}
-
-.icon-father {
-    float: right;
-    position: relative;
-    left: -50%; /* or right 50% */
-    text-align: left;
-    margin-top: 15px;
-}
-
-.icon-father > .icon-holder {
-    position: relative;
-    left: 50%;
-}
-
-    #icon1, #icon3, #icon5{ 
-        display: block; 
+    height: 100%; 
+    overflow: hidden; }
+@media (max-width: 50rem) {
+    .holder {
+        width: 85vw;
+        height: 15vh; 
     }
-
-    #icon2, #icon4, #icon6{ 
-        display: none; 
+    .holder h1 {
+        font-size: 30px;
+        font-size: 6vh;
     }
+}
 
-h1{
-    position: relative;
-    bottom: 2px;
+@media (min-width: 50rem) {
+    .holder {
+        width: 45vh;
+        height: 15vh; 
+    }
+    .holder h1 {
+        font-size: 30px;
+        font-size: 6vh;
+    }
+}
+
+.holder {
+    background-color: white;
     text-align: center;
-    font-family: 'Didact Gothic', sans-serif;
-    color: #f787b2;
-     
-    -webkit-animation: color-change 10s infinite;
-    -moz-animation: color-change 10s infinite;
-    }
+    border-width:3vh;
+    border-style:double;
+    border-color: rgb(255, 72, 72);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    
+    z-index: 1; }
 
-@-webkit-keyframes color-change {
-    0%   { color: #f787b2; } 
-    20%  { color: #548ebe; }
-    40%  { color: #f787b2; }
-    60%  { color: #f787b2; }
-    80%  { color: #548ebe; }
-    100% { color: #f787b2; }
+
+.holder h1 {
+    line-height: 8.8vh;
+    display: inline-block;
+    vertical-align: middle;
+    
+    font-family: Porto;
+    color: rgb(255, 72, 72); }
+
+/*test*/
+.linkedin{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;   
+    font-family: Porto;
+    font-size: 5vh;
+    display: inline-block;
+    animation: linkedin 1900s linear infinite;
 }
-    
-@-moz-keyframes color-change {
-    0%   { color: #f787b2; } 
-    20%  { color: #548ebe; }
-    40%  { color: #f787b2; }
-    60%  { color: #f787b2; }
-    80%  { color: #548ebe; }
-    100% { color: #f787b2; }
+.linkedin:link {
+    text-decoration: none;
+    color: black;
+}
+.linkedin:visited {
+    color:black;
+}
+.linkedin:hover {
+    color: rgb(255, 72, 72);
+}
+.github{
+    margin: 5vh auto 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;   
+    font-family: Porto;
+    font-size: 5vh;
+    display: inline-block;
+    animation: github 1700s linear infinite;
+    right:-100%;
+}
+.github:link {
+    text-decoration: none;
+    color: black;
+}
+.github:visited {
+    color:black;
+}
+.github:hover {
+    color: rgb(255, 72, 72);
 }
 
-.icon{
-    background: red;  
-    -webkit-animation: super-rainbow 10s infinite alternate linear; 
-    -moz-animation: super-rainbow 10s infinite alternate linear;
-    
+.resume{
+    margin: 10vh auto 0;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;   
+    font-family: Porto;
+    font-size: 5vh;
+    display: inline-block;
+    animation: resume 1100s linear infinite;
+}
+.resume:link {
+    text-decoration: none;
+    color: black;
+}
+.resume:visited {
+    color:black;
+}
+.resume:hover {
+    color: rgb(255, 72, 72);
+}
+#one{
+    margin-top: 15vh;
+    animation: linkedin 1100s linear infinite;
+}
+#two{
+    margin-top: 20vh;
+    animation: github 2000s linear infinite;
+}
+#three{
+    margin-top: 25vh;
+    animation: resume 1700s linear infinite;
+}
+#four{
+    margin-top: 30vh;
+    animation: linkedin 1600s linear infinite;
+}
+#five{
+    margin-top: 35vh;
+    animation: github 1900s linear infinite;
+}
+#six{
+    margin-top: 40vh;
+    animation: resume 1560s linear infinite;
+}
+#seven{
+    margin-top: 45vh;
+    animation: linkedin 1276s linear infinite;
+}
+#eight{
+    margin-top: 50vh;
+    animation: github 1100s linear infinite;
+}
+#nine{
+    margin-top: 55vh;
+    animation: resume 1259s linear infinite;
+}
+#ten{
+    margin-top: 45vh;
+    animation: linkedin 1800s linear infinite;
+}
+#eleven{
+    margin-top: 50vh;
+    animation: github 1176s linear infinite;
+}
+#twelve{
+    margin-top: 55vh;
+    animation: resume 1100s linear infinite;
+}
+#thirteen{
+    margin-top: 60vh;
+    animation: linkedin 2000s linear infinite;
+}
+#fourteen{
+    margin-top: 65vh;
+    animation: github 1850s linear infinite;
+}
+#fifteen{
+    margin-top: 70vh;
+    animation: resume 1640s linear infinite;
+}
+#sixteen{
+    margin-top: 75vh;
+    animation: linkedin 1830s linear infinite;
+}
+#seventeen{
+    margin-top: 80vh;
+    animation: github 1660s linear infinite;
+}
+#eighteen{
+    margin-top: 85vh;
+    animation: resume 1730s linear infinite;
+}
+#nineteen{
+    margin-top: 90vh;
+    animation: linkedin 1570s linear infinite;
+}
+#twenty{
+    margin-top: 95vh;
+    animation: github 1530s linear infinite;
+}
+#twentyone{
+    margin-top: 100vh;
+    animation: resume 1378s linear infinite;
 }
 
-@-webkit-keyframes super-rainbow {
-    0%   { background: #f787b2; } 
-    20%  { background: #548ebe; }
-    40%  { background: #f787b2; }
-    60%  { background: #548ebe; }
-    80%  { background: #f787b2; }
-    100% { background: #548ebe; }
+@keyframes linkedin {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
 
-@-moz-keyframes super-rainbow {
-    0%   { background: #f787b2; } 
-    20%  { background: #548ebe; }
-    40%  { background: #f787b2; }
-    60%  { background: #548ebe; }
-    80%  { background: #f787b2; }
-    100% { background: #548ebe; }
+@keyframes github {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
 }
 
-/* desktop css */
-
-
-/*/////////////////////*/
-/*/////////////////////*/
-/*/////////////////////*/
-/*/////////////////////*/
-
-
-
-@media screen and (min-width: 800px) {
-
-    .container {
-    margin: 0;
-    }
-    
-    html {
-    box-sizing: border-box;
-    background:  url("https://d2w9rnfcy7mm78.cloudfront.net/2060633/original_aa81b15f3ac96ea7ccc7c5200ce370d4.gif") no-repeat center fixed; 
-    background-size: cover;
-    }
-    
-    #holder {
-        border: .5rem outset  #FDFAF8;
-        border-radius: 2px;
-        background-color: #f5e8dd;
-        max-width: 300px;
-        box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
-        font-size: 95%;
-    }
-
-    .icon-holder{
-        float: left;
-        border: 0.5rem outset #FDFAF8;
-        border-radius: 2px;
-        background-color: #f5e8dd;
-        width: 95px;
-        height: 95px;
-        margin: auto 5px;
-        box-shadow: 10px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    .icon-father {
-        float: right;
-        position: relative;
-        left: -50%;
-        text-align: left;
-        margin-top: 15px;
-    }
-
-    .icon-father > .icon-holder{
-        position: relative;
-        left: 50%;
-    }
-    
-    #icon1, #icon3, #icon5{ 
-        display: none; 
-    }
-    
-    #icon2, #icon4, #icon6{ 
-        display: block; 
-    }
-    
-    h1{
-        text-align: center;
-        font-family: 'Didact Gothic', sans-serif;
-        color: #f787b2;
-        -webkit-animation: color-change 10s infinite;
-        -moz-animation: color-change 10s infinite;
-    }
-
-    @-webkit-keyframes color-change {
-        0%   { color: #EB842C; } 
-        20%  { color: #FFCE44; }
-        40%  { color: #A48AA8; }
-        60%  { color: #EB842C; }
-        80%  { color: #FFCE44; }
-        100% { color: #A48AA8; }
-    }
-    
-    @-moz-keyframes color-change {
-        0%   { color: #EB842C; } 
-        20%  { color: #FFCE44; }
-        40%  { color: #A48AA8; }
-        60%  { color: #EB842C; }
-        80%  { color: #FFCE44; }
-        100% { color: #A48AA8; }
-    }
-
-    .icon{
-        background: red;  
-        -webkit-animation: super-rainbow 10s infinite alternate linear; 
-        -moz-animation: super-rainbow 10s infinite alternate linear;
-    }
-    
-    @-webkit-keyframes super-rainbow {
-        0%   { background: #EB842C; } 
-        20%  { background: #FFCE44; }
-        40%  { background: #A48AA8; }
-        60%  { background: #EB842C; }
-        80%  { background: #FFCE44; }
-        100% { background: #A48AA8; }
-    }
-
-    @-moz-keyframes super-rainbow {
-        0%   { background: #EB842C; } 
-        20%  { background: #FFCE44; }
-        40%  { background: #A48AA8; }
-        60%  { background: #EB842C; }
-        80%  { background: #FFCE44; }
-        100% { background: #A48AA8; }
-    }
+@keyframes resume {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
 }
