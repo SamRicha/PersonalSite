@@ -6,7 +6,8 @@ progress, sub, sup {
     src: url("../font/Porto.ttf"); }
 
 html, body {
-    min-width: 260px; 
+    min-width: 100px; 
+    min-width: 350px;
     width: 100%;
     height: 100%; 
     overflow: hidden; }
@@ -18,6 +19,12 @@ html, body {
     .holder h1 {
         font-size: 30px;
         font-size: 6vh;
+    }
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative;
     }
 }
 
@@ -66,7 +73,7 @@ html, body {
     font-family: Porto;
     font-size: 5vh;
     display: inline-block;
-    animation: linkedin 1900s linear infinite;
+
 }
 .linkedin:link {
     text-decoration: none;
@@ -77,6 +84,7 @@ html, body {
 }
 .linkedin:hover {
     color: rgb(255, 72, 72);
+    animation: linkedin 1900s linear infinite;
 }
 .github{
     margin: 5vh auto 0;
@@ -86,7 +94,7 @@ html, body {
     font-family: Porto;
     font-size: 5vh;
     display: inline-block;
-    animation: github 1700s linear infinite;
+
     right:-100%;
 }
 .github:link {
@@ -98,6 +106,7 @@ html, body {
 }
 .github:hover {
     color: rgb(255, 72, 72);
+    animation: github 1700s linear infinite;
 }
 
 .resume{
@@ -108,7 +117,7 @@ html, body {
     font-family: Porto;
     font-size: 5vh;
     display: inline-block;
-    animation: resume 1100s linear infinite;
+
 }
 .resume:link {
     text-decoration: none;
@@ -119,89 +128,133 @@ html, body {
 }
 .resume:hover {
     color: rgb(255, 72, 72);
+    animation: resume 1100s linear infinite;
 }
 #one{
     margin-top: 15vh;
+
+}
+#one:hover{
     animation: linkedin 1100s linear infinite;
 }
 #two{
     margin-top: 20vh;
+}
+#two:hover{
     animation: github 2000s linear infinite;
 }
 #three{
     margin-top: 25vh;
+}
+#three:hover{
     animation: resume 1700s linear infinite;
 }
 #four{
     margin-top: 30vh;
+}
+#four:hover{
     animation: linkedin 1600s linear infinite;
 }
 #five{
     margin-top: 35vh;
+}
+#five:hover{
     animation: github 1900s linear infinite;
 }
 #six{
     margin-top: 40vh;
+}
+#six:hover{
     animation: resume 1560s linear infinite;
 }
 #seven{
     margin-top: 45vh;
+}
+#seven:hover{
     animation: linkedin 1276s linear infinite;
 }
 #eight{
     margin-top: 50vh;
+}
+#eight:hover{
     animation: github 1100s linear infinite;
 }
 #nine{
     margin-top: 55vh;
+}
+#nine:hover{
     animation: resume 1259s linear infinite;
 }
 #ten{
     margin-top: 45vh;
+}
+#ten:hover{
     animation: linkedin 1800s linear infinite;
 }
 #eleven{
     margin-top: 50vh;
+}
+#eleven:hover{
     animation: github 1176s linear infinite;
 }
 #twelve{
     margin-top: 55vh;
+}
+#twelve:hover{
     animation: resume 1100s linear infinite;
 }
 #thirteen{
     margin-top: 60vh;
+}
+#thirteen:hover{
     animation: linkedin 2000s linear infinite;
 }
 #fourteen{
     margin-top: 65vh;
+}
+#fourteen:hover{
     animation: github 1850s linear infinite;
 }
 #fifteen{
     margin-top: 70vh;
+}
+#fifteen:hover{
     animation: resume 1640s linear infinite;
 }
 #sixteen{
     margin-top: 75vh;
+}
+#sixteen:hover{
     animation: linkedin 1830s linear infinite;
 }
 #seventeen{
     margin-top: 80vh;
+}
+#seventeen:hover{
     animation: github 1660s linear infinite;
 }
 #eighteen{
     margin-top: 85vh;
+}
+#eighteen:hover{
     animation: resume 1730s linear infinite;
 }
 #nineteen{
     margin-top: 90vh;
+}
+#nineteen:hover{
     animation: linkedin 1570s linear infinite;
 }
 #twenty{
     margin-top: 95vh;
+}
+#twenty:hover{
     animation: github 1530s linear infinite;
 }
 #twentyone{
     margin-top: 100vh;
+}
+#twentyone:hover{
     animation: resume 1378s linear infinite;
 }
 
